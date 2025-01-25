@@ -10,7 +10,7 @@ export default defineConfig({
   srcDir: "./articles",
   description: "write something!",
   ignoreDeadLinks: true,
-  appearance: "dark",
+  appearance: "light",
   base: "/front-blog/",
   vite: {
     resolve: {
