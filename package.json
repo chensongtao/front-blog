@@ -1,0 +1,34 @@
+{
+  "name": "front-blog",
+  "version": "1.0.0",
+  "description": "write something",
+  "main": "index.js",
+  "keywords": [
+    "前端知识总结",
+    "笔记",
+    "个人知识库"
+  ],
+  "author": "chensongtao",
+  "license": "ISC",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build && node ./buildend/index.js",
+    "docs:preview": "vitepress preview",
+    "sync-juejin-articles": "node ./buildstart/index.js"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "node-fetch": "^3.3.2",
+    "vitepress": "1.0.0-beta.5"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.22",
+    "jsdom": "^22.1.0",
+    "xmind-embed-viewer": "^1.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
